@@ -8,6 +8,7 @@ public class AnimalPaintingApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(AnimalPaintingApplication.class, args);
+        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA.");
     }
 
 }
