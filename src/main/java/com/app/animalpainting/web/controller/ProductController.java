@@ -1,6 +1,6 @@
 package com.app.animalpainting.web.controller;
 import com.app.animalpainting.services.ProductService;
-import com.app.animalpainting.web.model.Product;
+import com.app.animalpainting.web.model.ProductDto;
 import jakarta.validation.ConstraintViolationException;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpHeaders;
@@ -23,7 +23,7 @@ public class ProductController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Product>> getAllProducts() {
+    public ResponseEntity<List<ProductDto>> getAllProducts() {
         return new ResponseEntity<>(productService.getProducts(), HttpStatus.OK);
     }
     

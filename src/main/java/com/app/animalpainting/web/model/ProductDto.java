@@ -13,7 +13,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 
-public class Product {
+public class ProductDto {
    
 	private int id;
     private String name;
