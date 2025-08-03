@@ -26,4 +26,5 @@ public class ProductController {
     public ResponseEntity<List<Product>> getAllProducts() {
         return new ResponseEntity<>(productService.getProducts(), HttpStatus.OK);
     }
+    
 }
