@@ -27,7 +27,7 @@
         <url/>
     </scm>
     <properties>
-        <java.version>11</java.version>
+        <java.version>17</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -120,8 +120,9 @@
 
     </dependencies>
 
-  <build>
+ <build>
     <plugins>
+        <!-- Compiler plugin (keep this) -->
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
@@ -130,6 +131,11 @@
                 <source>22</source>
                 <target>22</target>
             </configuration>
+        </plugin>
+
+        <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId>
         </plugin>
     </plugins>
 </build>
